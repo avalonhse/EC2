@@ -1,6 +1,7 @@
 git config --global user.name “avalonhse”
 git config --global user.email avalonhse@gmail.com
 
+mkdir ~/Downloads
 cd ~/Downloads
 wget http://apt.puppetlabs.com/puppetlabs-release-precise.deb
 sudo dpkg -i puppetlabs-release-precise.deb 
