@@ -14,3 +14,14 @@ sudo chmod a+x /usr/local/bin/papply
 cd ~/EC2
 cp id_rsa /home/ubuntu/.ssh/
 sudo chmod 400 /home/ubuntu/.ssh/id_rsa
+
+sudo useradd -m git
+cd /home/git
+sudo mkdir .ssh
+sudo chmod 700 .ssh
+sudo cp /home/ubuntu/EC2/id_rsa /home/git/.ssh/id_rsa
+sudo chmod 400 .ssh/id_rsa
+sudo chown -R git:git /home/git/
+sudo su git
+git clone 54.255.146.15:/var/git/puppet.git
+
