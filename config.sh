@@ -23,5 +23,4 @@ sudo cp /home/ubuntu/EC2/id_rsa /home/git/.ssh/id_rsa
 sudo chmod 400 .ssh/id_rsa
 sudo chown -R git:git /home/git/
 sudo su git
-git clone 54.255.146.15:/var/git/puppet.git
 
